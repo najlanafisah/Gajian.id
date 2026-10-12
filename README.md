@@ -1,72 +1,106 @@
-# Gajian.id – Bikin Gajian Jadi Gampang
+# Gajian.id
 
-**Gajian.id** adalah solusi praktis dan modern untuk mengelola penggajian karyawan. Dibuat dengan fokus pada kemudahan, kecepatan, dan efisiensi, aplikasi ini memudahkan perusahaan untuk mengatur gaji hanya dengan beberapa klik.
+Gajian.id is a web-based payroll management application designed to simplify employee salary processing through a practical and user-friendly interface.
 
----
+## Features
 
-## ✨ Fitur Unggulan
+- **Payroll Automation:** Simplifies employee payroll processing.
+- **Salary Calculation:** Supports salary, allowance, and deduction calculations.
+- **Payroll History:** Keeps track of employee salary records.
+- **Interactive Dashboard:** Provides a clear overview through a responsive interface.
+- **User Authentication:** Provides login access for administrators and HR personnel.
+- **Responsive UI:** Offers a clean and user-friendly interface.
 
--  Otomatisasi proses penggajian
--  Hitung gaji, tunjangan, dan potongan secara akurat
--  Riwayat transaksi gaji karyawan
--  Dashboard interaktif & responsif
--  Sistem login aman untuk admin & HRD
--  UI/UX clean dan user-friendly
+## Tech Stack
 
-## 🛠️ Teknologi yang Digunakan
+- **PHP:** Backend development
+- **Laravel:** Web application framework
+- **Blade:** Server-side templating
+- **HTML, CSS, JavaScript, and SCSS:** Frontend development
+- **Composer:** PHP dependency management
+- **npm:** Frontend package management
+- **Vite:** Frontend asset development and bundling
 
-- **Frontend**: HTML, CSS, JavaScript, SCSS
-- **Template Engine**: Blade
-- **Backend**: PHP
-- **Tools**: Composer, npm
+## Getting Started
 
-## 📦 Instalasi
+### Prerequisites
 
-> Pastikan sudah menginstal **PHP**, **Composer**, and **Node.js**.
+Make sure you have the following installed:
 
-1. Clone repository
-   
+- PHP
+- Composer
+- Node.js and npm
+- A database supported by the project configuration
+
+### Installation
+
+1. Clone the repository:
+
    ```bash
-    git clone https://github.com/username/gajian-id.git
-    ```
-2.  Masuk ke folder project
-   
-    ```bash
-    cd gajian-id
+   git clone https://github.com/najlanafisah/Gajian.id.git
+   cd Gajian.id
+   ```
 
-3. Install dependency
-   
+2. Install the dependencies:
+
    ```bash
-    composer install
-   
-    npm install && npm run dev
+   composer install
+   npm install
+   ```
 
-4. Copy file .env dan generate app key
-   
+3. Configure the environment:
+
    ```bash
-    cp .env.example .env
-   
-    php artisan key:generate
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-5. Setup database
-   
+4. Configure your database connection in the `.env` file.
+
+5. Run the database migrations:
+
    ```bash
-    php artisan migrate
+   php artisan migrate
+   ```
 
-6. Jalankan server lokal
-   
+6. Start the frontend development server:
+
    ```bash
-    php artisan serve
+   npm run dev
+   ```
 
-## 🤝 Kontribusi  
-Ingin ikut berkontribusi?
+7. Start the Laravel development server in a separate terminal:
 
-- Fork repositori ini  
-- Buat branch baru: `git checkout -b fitur-nama`  
-- Commit perubahan: `git commit -m "Tambah fitur baru"`  
-- Push ke branch: `git push origin fitur-nama`  
-- Buka Pull Request
+   ```bash
+   php artisan serve
+   ```
 
-## 📬 Kontak  
-Punya pertanyaan atau ide?  
-📧 Email: najlanafisah@gmail.com
+8. Open the local URL displayed by Laravel in your browser.
+
+## Project Structure
+
+```text
+Gajian.id/
+├── app/          # Application logic
+├── bootstrap/    # Application bootstrapping
+├── config/       # Configuration files
+├── database/     # Database migrations and seeders
+├── public/       # Public assets and entry point
+├── resources/    # Views and frontend resources
+├── routes/       # Application routes
+├── storage/      # Logs, cache, and generated files
+├── tests/        # Automated tests
+├── .env.example  # Environment configuration template
+├── artisan       # Laravel command-line interface
+├── composer.json # PHP dependencies
+├── package.json  # Frontend dependencies
+└── README.md     # Project documentation
+```
+
+## Project Status
+
+A web-based payroll management project focused on simplifying salary administration and improving payroll workflow efficiency.
+
+## License
+
+No license information has been confirmed for this repository.
